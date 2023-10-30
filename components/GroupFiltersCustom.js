@@ -30,7 +30,6 @@ const searchTerm = "";
 
 const GroupFiltersCustom = (props) => {
   const [locationFilter, setLocationFilter] = useState(null);
-  const [isFocus, setIsFocus] = useState(false);
   const { navigation, colors } = props;
 
   const dispatch = useDispatch();
