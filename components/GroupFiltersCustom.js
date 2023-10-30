@@ -1,13 +1,12 @@
 //In components/GroupFiltersCustom.js...
 
 import React, { useState } from "react";
-import { StyleSheet, TouchableOpacity, View } from "react-native";
-import { TextInput, Button, Text, Switch } from "react-native";
+import { TouchableOpacity, View } from "react-native";
+import { Text } from "react-native";
 import { useDispatch } from "react-redux";
 import { groupsRequested } from "@src/actions/socialGroups";
 import { getExternalCodeSetup } from "@src/externalCode/externalRepo";
 import withGlobalStyles from "@src/components/hocs/withGlobalStyles";
-import { Dropdown } from "react-native-element-dropdown";
 import Input from "../Input";
 
 const hook = getExternalCodeSetup().groupsListHooksApi;
